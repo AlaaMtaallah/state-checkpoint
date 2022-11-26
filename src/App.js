@@ -23,20 +23,14 @@ class App extends React.Component {
     }), () => console.log(this.state) );
   }
   render() {
-    const isshown = this.state.shows;
-    let profile;
-    if (isshown) {
-      profile = <Profile fullName={this.state.Person.fullName} profession={this.state.Person.profession} imgSrc={this.state.Person.imgSrc} bio={this.state.Person.bio}></Profile>;
-    } else {
-      profile = <div></div>;
-    }
     return (
       <>
         <div className="container my-5 py-5">
           <div className="row justify-content-center">
             <button className="col-2 btn btn-success mx-2" onClick={this.handleClick}>Click Me</button>
           </div>
-          {profile}
+          {this.state.shows ? <Profile fullName={this.state.Person.fullName} profession={this.state.Person.profession} imgSrc={this.state.Person.imgSrc} bio={this.state.Person.bio}></Profile> : <></>}
+          <h2></h2>
         </div>
       </>
 
