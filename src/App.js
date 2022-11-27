@@ -26,7 +26,6 @@ class App extends React.Component {
             <button className="col-2 btn btn-success mx-2" onClick={this.handleClick}>Click Me</button>
           </div>
           {this.state.shows ? <Profile fullName={this.state.Person.fullName} profession={this.state.Person.profession} imgSrc={this.state.Person.imgSrc} bio={this.state.Person.bio}></Profile> : <></>}
-          <h2></h2>
         </div>
       </>
 
