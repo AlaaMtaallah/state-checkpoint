@@ -1,17 +1,13 @@
 import React from "react";
 import Profile from "./Components/Profile";
 class App extends React.Component {
-  // constructor(props) {
-  //   super(props);  
-  //   this.handleClick = this.handleClick.bind(this);  
-  // }
 
   state={
     Person : { 
       fullName:"Alaa Mtaallah", 
       bio:`A software developer specialized in Dotnet, I have nearly 2 years of experience, at this time i'm looking to improve my skills and find a better opportunities.
       Best Regards :)`, 
-      imgSrc :"../af.png", 
+      imgSrc :"../im-2.jpg", 
       profession:"Dotnet Developer"
     },
     shows : false
